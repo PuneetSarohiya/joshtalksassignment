@@ -23,10 +23,9 @@ function Home() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedPriority, setSelectedPriority] = useState('');
   const [showCompleted, setShowCompleted] = useState(false);
-  const [width, setWidth] = useState(0);
+  const [width, setWidth] = useState(window.innerWidth);
 
   const dispatch = useDispatch();
-  const task = useSelector(state => getAgentsTasksDetails(state));
 
   useEffect(() => {
     const handleResize = () => {

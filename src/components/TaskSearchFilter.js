@@ -17,23 +17,23 @@ function TaskSearchFilter({
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [selectedOption, setSelectedOption] = useState(selectedPriority);
 
-  const openModal = () => setIsModalVisible(true);
-  const closeModal = () => setIsModalVisible(false);
+  const openFilterModal = () => setIsModalVisible(true);
+  const closeFilterModal = () => setIsModalVisible(false);
 
   const handleSelect = (value) => {
     setSelectedOption(value);
     handlePrioritySelectChange(value);
-    closeModal();
+    closeFilterModal();
   };
 
   const filterCompletedButton = () => {
     toggleShowCompleted();
-    closeModal();
+    closeFilterModal();
   };
 
   const filterSortutton = () => {
     handleSortByPriority();
-    closeModal();
+    closeFilterModal();
   };
 
   return (
@@ -78,7 +78,7 @@ function TaskSearchFilter({
           </div>
         ) : (
           <div className={styles["button-container"]}>
-            <button className={styles["next-btn"]} onClick={openModal}>
+            <button className={styles["next-btn"]} onClick={openFilterModal}>
               Filter
             </button>
             <button className={styles["next-btn"]} onClick={handleResetFilters}>
@@ -87,7 +87,7 @@ function TaskSearchFilter({
             <Modal
               title="Apply Filters"
               visible={isModalVisible}
-              onCancel={closeModal}
+              onCancel={closeFilterModal}
               footer={null}
               bodyStyle={{ height: 200 }}
             >
