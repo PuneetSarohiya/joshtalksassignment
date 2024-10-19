@@ -1,0 +1,238 @@
+
+@media (min-width: 768px) {
+.heading-text
+{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    font-family: 'poppins';
+}
+
+.heading-text span
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    font-family: 'poppins';
+}
+.container
+{
+    border: 1px solid blue;
+    border-radius: 8px;
+    min-height: 240px;
+    width: 400px;
+    padding: 15px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.icon-wrapper{
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.whatsapp-toggle-cotainer{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .whatsappToggleText{
+    color: #1A1A1AAB;
+    letter-spacing: 0.5px;
+  }
+  .toggleButton {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 15px;
+    background-color: #c4c4c47a;
+    border-radius: 34px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+  
+  .toggleButton::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #A6A6A6;
+    /* background-color: #A6A6A6; */
+    border-radius: 50%;
+    transition: transform 0.3s;
+    border: none;
+    outline: none;
+  }
+  
+  .toggleButtonActivated::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    border: none;
+    outline: none;
+  }
+  
+  .toggled {
+    background-color:#FDF0F4  
+}
+  
+  .toggled::before {
+    transform: translateX(26px);
+  }
+
+
+  .taskbutton {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .taskbutton:hover {
+    background-color: #45a049;
+  }
+
+
+}
+
+
+
+@media (max-width: 768px) {
+  .heading-text
+  {
+      font-size: 16px;
+      font-weight: 600;
+      color: black;
+      font-family: 'poppins';
+  }
+  
+  .heading-text span
+  {
+      font-size: 16px;
+      font-weight: 400;
+      color: black;
+      font-family: 'poppins';
+  }
+  .container
+  {
+      border: 1px solid blue;
+      border-radius: 8px;
+      min-height: 240px;
+      width: 100%;
+      padding: 15px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .icon-wrapper{
+      gap: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  .whatsapp-toggle-cotainer{
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .whatsappToggleText{
+      color: #1A1A1AAB;
+      letter-spacing: 0.5px;
+    }
+    .toggleButton {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 15px;
+      background-color: #c4c4c47a;
+      border-radius: 34px;
+      transition: background-color 0.3s;
+      cursor: pointer;
+      outline: none;
+      border: none;
+    }
+    
+    .toggleButton::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background-color: #A6A6A6;
+      /* background-color: #A6A6A6; */
+      border-radius: 50%;
+      transition: transform 0.3s;
+      border: none;
+      outline: none;
+    }
+    
+    .toggleButtonActivated::before{
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background-color: blue;
+      border-radius: 50%;
+      transition: transform 0.3s;
+      border: none;
+      outline: none;
+    }
+    
+    .toggled {
+      background-color:#FDF0F4  
+  }
+    
+    .toggled::before {
+      transform: translateX(26px);
+    }
+  
+  
+    .taskbutton {
+      background-color: blue;
+      color: white;
+      border: none;
+      padding: 10px 40px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+    }
+    
+    .taskbutton:hover {
+      background-color: #45a049;
+    }
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
